@@ -1,0 +1,8 @@
+.table-error{
+	width: 420px;
+}
+.table-error td{
+	border: 1px solid #cac8c8;
+	width: 500px;
+	padding-left: 10px;
+}

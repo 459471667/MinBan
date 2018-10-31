@@ -1,0 +1,42 @@
+@import "../../../variables";
+
+.class-add {
+  width: 840px;
+  max-width: 840px;
+  .news-body {
+    > div {
+      display: flex;
+      margin-bottom: 20px;
+      align-items: baseline;
+      label {
+        text-align: left;
+        width: 76px !important;
+        font-size: 12px !important;
+        &:before {
+          display: inline-block;
+          margin-right: 4px;
+          content: "*";
+          line-height: 1;
+          font-size: 12px;
+          color: #f5222d;
+        }
+      }
+      .rdw-storybook-wrapper {
+        width: 760px;
+      }
+      .rdw-storybook-editor {
+        height: 250px;
+        border: 1px solid @light-gray;
+        .DraftEditor-root {
+          height: inherit;
+        }
+      }
+    }
+    .error-tip {
+      color: #f5222d;
+      font-size: 12px;
+      margin: -12px 0 2px 76px;
+    }
+  }
+
+}

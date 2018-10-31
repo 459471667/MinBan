@@ -1,0 +1,125 @@
+@import "../../variables";
+@import "../../base";
+@import "../../Login";
+
+.fixed-header-outer {
+  padding: 0 !important;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 40px;
+  background-color: #fff;
+  > div {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  a {
+    color: @font-gray;
+    margin-right: 32px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .login-a-tag{
+    padding: 0 5px;
+    border-right:solid 1px #7f8489;
+    font-family: -webkit-body;
+    color: #0074c5;
+    &:last-of-type{
+      border-right: initial;
+    }
+  }
+  .welcome-a-tag{
+    padding-right: 10px;
+    font-family: -webkit-body;
+    margin-right: 10px;
+    border-right:solid 1px #84848f;
+  }
+  .d-flex {
+    justify-content: space-between;
+  }
+}
+
+.fixed-header {
+  padding: 0 !important;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 63px;
+  top: 40px;
+  .header-menu {
+    height: 63px;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .ant-menu-item-selected {
+    background-color: @selected-color !important;
+  }
+}
+
+.ant-layout {
+  height: 100%;
+  background-color: #fff;
+}
+
+.menu-item-horizontal {
+  border-width: 2px;
+  .ant-menu-item {
+    color: #000;
+    font-size: 16px;
+    margin-top: -2px;
+    padding: 0;
+    span {
+      width: 100%;
+      padding: 0 20px;
+      border-right: 1px @light-gray solid;
+    }
+    &:last-child {
+      span {
+        border: none;
+      }
+    }
+  }
+  .ant-menu-item-selected {
+    color: @base-blue;
+  }
+}
+
+.menu-item-custom {
+  border: none !important;
+  .ant-menu-item {
+    width: 158px;
+    margin: 0 !important;
+    height: 40px;
+    color: #000;
+  }
+  .ant-menu-item-selected {
+    background-color: inherit !important;
+    color: @base-blue;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.big-title {
+  color: #fff;
+  float: left;
+  height: 30px;
+  cursor: pointer;
+  font-size: 26px;
+  line-height: 30px;
+  margin: 17px 20px 17px 0;
+}
+
+.for-custom-define-antd-form-place-holder{
+  .ant-select-selection__placeholder{
+    margin-top:-8px !important;
+  }
+}
+
+
+

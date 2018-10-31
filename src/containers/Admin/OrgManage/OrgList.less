@@ -1,0 +1,41 @@
+@import "../../../variables";
+.ant-layout-sider{
+  background-color: inherit;
+}
+
+.fixed-container {
+  position: initial;
+}
+
+.tree-container {
+  width: 230px!important;
+  max-width: 230px!important;
+  min-width: 230px!important;
+  font-size: 12px;
+  color: #000;
+  border: 1px @light-gray solid;
+  div.tree-title {
+    font-size: 14px;
+    padding: 14px 16px;
+    border-bottom: 1px @light-gray solid;
+  }
+  .tree-body {
+    padding: 10px 12px;
+    position: relative;
+    height: 550px;
+    overflow-y: scroll;
+    > li > span > .ant-tree-title {
+      color: #000;
+      font-size: 14px;
+    }
+    .ant-tree-title {
+      color: #000;
+      font-size: 12px;
+    }
+  }
+}
+
+.org-content {
+  margin-left: 10px;
+
+}

@@ -1,0 +1,87 @@
+@import "../../variables";
+.admin-index {
+  padding: 20px 0 0 10px;
+  /*border-bottom: 1px solid @base-gray;*/
+  .block1 {
+    height: 150px;
+    flex-direction: row;
+    justify-content: space-around;
+    > div {
+      color: #000;
+      height: inherit;
+      font-size: 18px;
+      span {
+        font-size: 36px;
+      }
+    }
+    .total-class {
+      background: url("../../assets/img/class_icon.png") no-repeat;
+      background-size: 150px auto;
+    }
+    .total-teacher {
+      background: url("../../assets/img/teacher_icon.png") no-repeat;
+      background-size: 150px auto;
+    }
+    .total-student {
+      background: url("../../assets/img/student_icon.png") no-repeat;
+      background-size: 150px auto;
+    }
+  }
+  .block2 {
+    margin-top: 70px;
+    > div {
+      margin-bottom: 40px;
+      flex-direction: row;
+      justify-content: space-between;
+      > div {
+        height: 90px;
+        width: 248px;
+        max-width: 248px;
+        padding-left: 76px;
+        box-sizing: border-box;
+        justify-content: space-around;
+        border-radius: 12px;
+      }
+      .total-time {
+        background: url("../../assets/img/time_icon.png") no-repeat 10px 12px;
+        p {
+          &:first-of-type {
+            font-size: 18px;
+            margin: 10px 0 0;
+            span {
+              color: @base-green;
+            }
+          }
+          &:last-of-type {
+            font-size: 12px;
+            margin: 0 0 10px;
+            color: @tip-font-gray;
+          }
+        }
+      }
+      .total-play {
+        dd {
+          font-size: 14px;
+          margin: 20px 0 0;
+          color: #333333;
+        }
+        p {
+          &:first-of-type {
+            font-size: 12px;
+            margin:  0 0 15px;
+            color: #000;
+            span {
+              color: @base-orange;
+              font-family: Arial-BoldMT;
+              font-size: 24px;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  .table-error td{
+    border:"1px solid red"
+  }
+}

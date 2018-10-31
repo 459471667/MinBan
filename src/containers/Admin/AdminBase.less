@@ -1,0 +1,178 @@
+@import "../../variables";
+
+body{
+  /*min-height:800px*/
+}
+
+.search-block {
+  height: 72px;
+  line-height: 72px;
+  > div {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  label {
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: 20px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  .ant-input {
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .ant-select {
+    width: 96px;
+    height: 28px;
+    margin-right: 20px;
+    .ant-select-selection--single {
+      height: inherit;
+    }
+  }
+  .ant-btn {
+    height: 28px;
+    line-height: 26px;
+    font-size: 12px;
+    border-radius: 0;
+  }
+}
+
+h3 {
+  color: #000 !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+.ant-input {
+  width: 180px;
+  height: 28px;
+  padding: 0 4px;
+  border-radius: 0;
+}
+
+.ant-select {
+  height: 28px;
+  .ant-select-selection--single {
+    height: inherit;
+  }
+  .ant-select-selection__rendered {
+    height: inherit;
+    line-height: 28px;
+  }
+}
+
+.ant-btn {
+  height: 28px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.ant-calendar-picker {
+  vertical-align: middle; // 修复ie10中日期选矿不居中
+}
+
+.ant-calendar-picker-input {
+  width: 122px;
+  margin-right: 0 !important;
+}
+
+.ant-calendar-picker-icon:after {
+  content: '' !important;
+}
+
+.table-container table {
+  th {
+    padding: 9px 10px !important;
+    border-top: 1px solid #e8e8e8;
+    font-size: 12px !important;
+    &:first-of-type {
+      padding-left: 40px !important;
+      border-left: 1px solid #e8e8e8;
+    }
+    &:last-of-type {
+      padding-right: 40px !important;
+      border-right: 1px solid #e8e8e8;
+    }
+  }
+  td {
+    padding: 10px !important;
+    border: none !important;
+    font-size: 12px !important;
+    &:first-of-type {
+      padding-left: 40px !important;
+    }
+    &:last-of-type {
+      padding-right: 40px !important;
+    }
+  }
+  .ant-table-row {
+    > td > span > a:nth-of-type(2), a:nth-of-type(3) {
+      margin-left: 7px;
+    }
+  }
+}
+
+.btn-gray {
+  color: #fff;
+  border-color: @deep-gray;
+  background-color: @deep-gray;
+}
+
+.btn-gray:hover, .btn-gray:focus {
+  color: #fff;
+  border-color: @deep-gray;
+  background-color: @deep-gray;
+}
+
+.ant-table-pagination {
+  float: none !important;
+  display: flex;
+  justify-content: center;
+}
+
+.ant-pagination-item, .ant-pagination-prev {
+  margin-right: 4px;
+  a:hover {
+    color: #fff;
+  }
+}
+
+.ant-pagination-item-active {
+  background-color: @base-blue;
+  a {
+    color: #fff !important;
+    &:hover, &:focus {
+      color: #fff !important;
+    }
+  }
+}
+
+.search-btn-block {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-btn-group {
+  height: 72px;
+  display: flex;
+  line-height: 72px;
+  align-items: center;
+  justify-content: flex-end;
+  button {
+    height: 30px !important;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}

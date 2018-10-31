@@ -1,0 +1,46 @@
+@import "../../../variables";
+.input-group {
+  flex-direction: row;
+  align-items: center;
+  .ant-input {
+    width: 60px!important;
+    margin: 0 10px;
+    text-align: center;
+  }
+  span {
+    color: @tip-font-gray;
+    margin-left: 32px;
+  }
+}
+
+.class-add {
+  width: 510px;
+  max-width: 510px;
+  padding-top: 20px;
+  .ant-form-item-label {
+    text-align: left;
+    width: 82px;
+    label {
+      font-size: 12px!important;
+    }
+  }
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+  .ant-form-explain {
+    font-size: 12px;
+  }
+  .ant-form-item-with-help {
+    margin-bottom: 0;
+  }
+  .ant-btn {
+    height: 28px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  .ant-radio-inner {
+    &:after {
+      border-radius: 4px;
+    }
+  }
+}
